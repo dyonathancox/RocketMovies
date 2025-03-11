@@ -1,22 +1,20 @@
-import { Container } from './styles';
-import { RiShutDownLine } from 'react-icons/ri';
+import { Container, Profile} from "./styles";
+import { Input } from "../Input";
 
 export function Header(){
     return(
         <Container>
-            <Profile to="/profile">
-                <img src="https://github.com/dyonathancox.png" alt="Foto do usuário" />
+            <h1>RocketMovies</h1>
+            <Input placeholder="Pesquise pelo título" />
+            <Profile>
+                
             <div>
-                <span>Bem vindo</span>
                 <strong>Dyonathan Cox</strong>
+                <span>Sair</span>
             </div>
-            </Profile>
-
-            <Logout>
-                <RiShutDownLine/>
-            </Logout>
-
+                <img src="https://github.com/dyonathancox.png" alt="Foto do usuário" />
             
+            </Profile>            
         </Container>
     )
 }
