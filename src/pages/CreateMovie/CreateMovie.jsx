@@ -1,22 +1,53 @@
-import { Container } from "./styles";
+import { Container, Form, Section } from "./styles";
 
-import { FiPlus } from 'react-icons/fi';
+import { FiArrowLeft, FiPlus } from 'react-icons/fi'
 
 import { Header } from "../../Components/Header";
-import {Button} from "../../Components/Button";
+import { NoteItem } from "../../components/NoteItem/NoteItem";
+import { Input } from "../../Components/Input";
+import { Button } from "../../Components/Button";
+import { Textarea } from "../../components/Textarea/Textarea";
+
 
 export function CreateMovie() {
-  return (
-    <Container>
-      <Header />     
+    return (
+        <Container>
+            <Header />
 
-      <div>
-        <h1>Meus filmes      </h1>
-        <Button title="Adicionar filme" />
-      </div>
+            <main>
+                <Form>
+                    <header>
+                        <a><FiArrowLeft />Voltar</a>
+                        <h1>Novo filme</h1>
+                    </header>
 
-      
+                    <div>
+                        <Input placeholder="Título" type="text" />
+                        <Input placeholder="Sua nota (de 0 a 5)" type="number" />
+                        <Textarea placeholder="Observações:" />
+                    </div>
 
-    </Container>
-  );
+                    <Section>
+                        <div>
+                            <h2>Marcadores</h2>
+                            <div className="marks">
+                                <NoteItem value="React" ></NoteItem>
+                                <NoteItem isNew placeholder="Novo marcador"></NoteItem>
+                            </div>
+
+                        </div>
+                    </Section>
+
+                    <div className="btn">
+                        <Button className="trash" title="Excluir filme" />
+                        <Button title="Salvar alterações" />
+
+                    </div>
+
+                </Form>
+
+            </main>
+        </Container>
+
+    )
 }
