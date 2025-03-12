@@ -26,6 +26,17 @@ export const Container = styled.div`
       justify-content: space-between;
       flex-wrap: wrap;
     }
+
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 8px; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: ${({theme}) => theme.COLORS.PINK};
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); 
+    }    
 `;
 
 export const Form = styled.form`

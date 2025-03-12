@@ -8,6 +8,8 @@ import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
 import { Textarea } from "../../components/Textarea/Textarea";
 
+import { Link } from 'react-router-dom';
+
 
 export function CreateMovie() {
     return (
@@ -17,7 +19,7 @@ export function CreateMovie() {
             <main>
                 <Form>
                     <header>
-                        <a><FiArrowLeft />Voltar</a>
+                        <Link to="/"><FiArrowLeft />Voltar</Link>
                         <h1>Novo filme</h1>
                     </header>
 

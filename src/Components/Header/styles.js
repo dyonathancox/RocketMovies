@@ -11,7 +11,7 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-        
+            
 `;
 
 export const Profile = styled(Link)`
@@ -19,6 +19,7 @@ export const Profile = styled(Link)`
     width: 1200px;
     align-items: center;
     justify-content: center;
+    color: ${({theme}) => theme.COLORS.PINK};
     
 
     > img{
@@ -52,16 +53,18 @@ export const Profile = styled(Link)`
             line-height: 1;
             justify-content: center;
             margin-left: 64px;
+            color: ${({ theme }) => theme.COLORS.WHITE};
             
             > span{
                 font-size: 14px;
                 color: ${({ theme }) => theme.COLORS.GRAY_100};
                 }
                 
-                > strong{
+                > Link{
                 font-size: 18px;
                 color: ${({ theme }) => theme.COLORS.WHITE};
             }
+                
         }
         
         }

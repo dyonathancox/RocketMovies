@@ -1,5 +1,6 @@
 import { Container, Profile } from './styles.js';
 import { Input } from "../Input";
+import { Link } from 'react-router-dom';
 
 export function Header(){
     return(
@@ -11,7 +12,7 @@ export function Header(){
                 
                 <section>
 
-                    <strong>Dyonathan Cox</strong>
+                    <Link to="/profile"><strong>Dyonathan Cox</strong></Link>
                     <span>Sair</span>
                 </section>
             </div>
