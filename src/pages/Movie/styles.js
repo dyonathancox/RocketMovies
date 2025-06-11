@@ -2,19 +2,19 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_800}; 
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800}; 
   padding: 0px 123px;
   max-height: 65vh;
 
   margin: 40px auto;
 
   svg {
-      color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({ theme }) => theme.COLORS.PINK};
       font-size: 16px;     
     }
     
   .back {
-      color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({ theme }) => theme.COLORS.PINK};
       padding: 0 8px;  
   }
   ::-webkit-scrollbar {
@@ -24,9 +24,14 @@ export const Container = styled.div`
 
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: ${({theme}) => theme.COLORS.PINK};
+    background-color: ${({ theme }) => theme.COLORS.PINK};
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); 
-  }    
+  }  
+    
+  @media (max-width: 900px) {
+    padding: 0px 20px;
+    max-height: 100vh;
+  }
       
 `;
 
@@ -54,28 +59,37 @@ export const Profile = styled(Link)`
     width: 16px;
     height: 16px;
     margin-top: 18px;
-  
+
     border-radius: 35px;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
+    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
   }
 
-  > div {   
+  > div {
     flex-direction: column;
     line-height: 18px;
-    padding: 16px 9px 0 ;
+    padding: 16px 9px 0;
 
     pre {
       font-size: 14px;
-      color: ${({theme}) => theme.COLORS.GRAY_100};
-  
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
     strong {
       font-size: 14px;
-      color: ${({theme}) => theme.COLORS.WHITE};
+      color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+  }
+
+  @media (max-width: 900px) {
+    > div {
+      padding: 16px 0 0;
+    }
+
+    > img{
+      display: none;
     }
   }
 `;

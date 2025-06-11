@@ -20,8 +20,10 @@ export function Home() {
       </Title>
       <Content>
         <Section>
+          
           <Note data={{
             title: 'Interestellar',
+            id: '1',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [
@@ -33,6 +35,7 @@ export function Home() {
 
           <Note data={{
             title: 'Interestellar',
+            id: '2',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [
@@ -44,6 +47,7 @@ export function Home() {
 
           <Note data={{
             title: 'Interestellar',
+            id: '3',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [
@@ -55,6 +59,7 @@ export function Home() {
 
           <Note data={{
             title: 'Interestellar',
+            id: '4',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [
@@ -66,6 +71,7 @@ export function Home() {
 
           <Note data={{
             title: 'Interestellar',
+            id: '5',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [
@@ -77,6 +83,7 @@ export function Home() {
 
           <Note data={{
             title: 'Interestellar',
+            id: '6',
             rating: 4,
             description: 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper',
             tags: [

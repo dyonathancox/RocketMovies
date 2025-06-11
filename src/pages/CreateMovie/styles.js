@@ -1,56 +1,62 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    display: grid;
-    grid-template-rows: 105px auto;
-    grid-template-areas: 
- 
-    "header" 
+  display: grid;
+  grid-template-rows: 105px auto;
+  grid-template-areas:
+    "header"
     "content";
 
-    > main{
-      grid-area: content;
-      overflow-y: auto;
-    }
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
 
-    .trash{
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1000};
-        color: ${({ theme }) => theme.COLORS.PINK};
-    }
+  .trash {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1000};
+    color: ${({ theme }) => theme.COLORS.PINK};
+  }
 
-    .tags{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  .tags {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    ::-webkit-scrollbar {
-      -webkit-appearance: none;
-      width: 8px; 
-    }
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+  }
 
-    ::-webkit-scrollbar-thumb {
-      border-radius: 8px;
-      background-color: ${({theme}) => theme.COLORS.PINK};
-      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); 
-    }    
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 900px) {
+    > main {
+      padding: 0 20px;
+    }
+  
+  }
 `;
 
 export const Form = styled.form`
-    max-width: 1200px;
-    margin: 38px auto;
+  max-width: 1200px;
+  margin: 38px auto;
 
   > header {
     a {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 20px;
-        margin: 40px 0 24px;
-        color: ${({ theme }) => theme.COLORS.PINK}
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 20px;
+      margin: 40px 0 24px;
+      color: ${({ theme }) => theme.COLORS.PINK};
     }
   }
 
@@ -61,21 +67,21 @@ export const Form = styled.form`
     margin-top: 40px;
 
     > textarea {
-        grid-column: span 2;
-        height: 270px;
+      grid-column: span 2;
+      height: 270px;
     }
   }
 `;
 
 export const Section = styled.section`
-    margin-top: 40px;
+  margin-top: 40px;
 
-    .marks{
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1000};
-        padding: 16px;
-        display: flex;
-        gap: 16px;
-        border-radius: 10px;
-        margin: 24px 0 40px;
-    }
+  .marks {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1000};
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    border-radius: 10px;
+    margin: 24px 0 40px;
+  }
 `;
