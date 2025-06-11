@@ -718,4 +718,4 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   flex: 1;
   background: url(${c0}) no-repeat center;
   background-size: cover;
-`;function cb(){return M.jsx(u1,{children:M.jsx(rb,{})})}Gy.createRoot(document.getElementById("root")).render(M.jsx(Qt.StrictMode,{children:M.jsxs(Yv,{theme:Kv,children:[M.jsx(Zv,{}),M.jsx(cb,{})]})}));
+`;function cb(){return M.jsx(u1,{basename:"/RocketMovies/",children:M.jsx(rb,{})})}Gy.createRoot(document.getElementById("root")).render(M.jsx(Qt.StrictMode,{children:M.jsxs(Yv,{theme:Kv,children:[M.jsx(Zv,{}),M.jsx(cb,{})]})}));
