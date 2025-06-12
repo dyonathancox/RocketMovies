@@ -850,4 +850,4 @@ widht: 100%;
   flex: 1;
   background: url(${f0}) no-repeat center;
   background-size: cover;
-`;function cb(){return M.jsx(u1,{children:M.jsx(rb,{})})}Xy.createRoot(document.getElementById("root")).render(M.jsx(Qt.StrictMode,{children:M.jsxs(Gv,{theme:Vv,children:[M.jsx(Kv,{}),M.jsx(cb,{})]})}));
+`;function cb(){return M.jsx(u1,{basename:"/RocketMovies/",children:M.jsx(rb,{})})}Xy.createRoot(document.getElementById("root")).render(M.jsx(Qt.StrictMode,{children:M.jsxs(Gv,{theme:Vv,children:[M.jsx(Kv,{}),M.jsx(cb,{})]})}));
